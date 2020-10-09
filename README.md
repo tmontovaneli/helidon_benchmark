@@ -60,7 +60,7 @@ For 60 seconds the best it got was 60 requests.
 
 In all tests, the memory and latency kept pretty steady. One thing that happened was that the GC seemed a little bit busier overall.
 
-The following images show the couple graphs. One can find all graphs in the tests folder.
+The following images show couple graphs. One can find all graphs in the tests folder.
 
 * 2k requests in 10 seconds
 
