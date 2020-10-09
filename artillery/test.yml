@@ -1,0 +1,18 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 60
+      arrivalRate: 60
+  plugins:
+    influxdb:
+      testName: "helidon"
+      influx:
+        host: "localhost"
+        username: "admin"
+        password: "123456"
+        database: "mydb"
+
+scenarios:
+  - flow:
+      - get:
+          url: "/greet"      
