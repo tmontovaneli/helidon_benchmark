@@ -1,11 +1,63 @@
 # Helidon
 
-This repository was created to analyse the framework as an option for Java web microservices.
+This repository aims to analyse Helidon framework as an option for Java web microservices.
+
+## Testing
+
+The simplest version of a Helidon service was built and only one endpoint was stressed in order to hit the service limit.
+
+```
+curl -X GET http://localhost:8080/greet
+{"message":"Hello World!"}
+```
+
+There is no database connection, no integration to different services through HTTP or any other protocol. Besides, everything was executed locally.
+
+A docker image was created and a container with 1024mb of memory was initialized. 
+
+```
+docker run -d -p 8080:8080 --memory="1024m" --network ece2b6cf70d7 helidon
+```
+
+The following image shows how the loading test was executed:
+
+
+The tests were like:
+
+1. For 10 seconds
+* 50 requests, total of 500 requests and so on
+* 100 requests
+* 200 requests
+
+2. For 20 seconds
+* 50 requests, total of 1k requests and so on
+* 100 requests
+* 200 requests
+
+3. For 30 seconds
+* 50 requests, total of 1.5k requests and so on
+* 100 requests
+* 200 requests
+
+4. For 60 seconds
+* 50 requests, total of 3k requests and so on
+* 100 requests
+* 200 requests
+
+
+The results:
+
+
+
+
+
+
 
 ## Pros
 * Native image to run in GraalVM
 * It's built by modules so that we can add only what is needed. Among other modules, security, JPA, JWT Auth.
 * It provides development experience familiar to Java EE/Jakarta EE developers.
+* Start-up in few miliseconds
 
 ## Cons
 
@@ -15,6 +67,7 @@ This repository was created to analyse the framework as an option for Java web m
 ## Curiosities
 
 * It's made by Oracle
+
 
 
 
