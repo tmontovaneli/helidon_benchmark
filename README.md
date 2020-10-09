@@ -84,14 +84,23 @@ The following images show the couple graphs. One can find all graphs in the test
 
 ## Cons
 
-* The documentation is well written, but few questions on StackOverFlow. Only 81 at this moment. As comparison, 92,278 spring-boot questions.
-
+* StackOverFlow indice: on Oct 9th, only 81 at this moment. As comparison, 92,278 spring-boot questions.
+* Little content on the internet overall
+* It was not found a community really excited about it
 
 ## Curiosities
 
 * It's made by Oracle
 
+## Conclusion
 
+When it comes to performance, it was easy to hit the service limit. One might say the test could have tweaked here and there in order to improve the results. I could not agree more. I do believe that if it was tuned a bit, the results could achieve better limits.
+
+However when Helidon is compared to its competitors, it basically is defeated. Look at this [article](https://medium.com/better-programming/which-java-microservice-framework-should-you-choose-in-2020-4e306a478e58).
+
+On top of that, the project is not so well-known in the community.
+
+Therefore, by choosing Helidon, we would end up having the same problem: a too young framework that can be the hype in few months or years, but definitely it's not today. It would be a bet.
 
 
 ## References:
