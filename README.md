@@ -60,7 +60,18 @@ In all tests, the memory and latency kept pretty steady. One thing that happened
 
 The following images show the couple graphs. One can find all graphs in the tests folder.
 
+* 2k requests in 10 seconds
+
 ![INFO](tests/10s/200_arrival_rate.png "2k requests in 10 seconds")
+
+* 2k requests in 20 seconds
+![INFO](tests/20s/100_arrival_rate.png "2k requests in 20 seconds")
+
+* 3k requests in 30 seconds
+![INFO](tests/30s/100_arrival_rate.png "3k requests in 30 seconds")
+
+* 3.6k requests in 60 seconds
+![INFO](tests/60s/60_arrival_rate.png "3.6k requests in 60 seconds")
 
 
 ## Pros
