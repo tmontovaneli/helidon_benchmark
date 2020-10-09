@@ -54,6 +54,13 @@ The results were:
 | 200             | OK |    FAIL | FAIL | FAIL |
 
 
+For 60 seconds the best it got was 60 requests.
+
+In all tests, the memory kept pretty steady. One thing that happened was that the GC seemed a little bit busier overall.
+
+The following images show the couple graphs. One can find all graphs in the tests folder.
+
+![alt text](tests/10s/200_arrival_rate.png "2k requests in 10 seconds")
 
 
 ## Pros
