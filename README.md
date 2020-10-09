@@ -108,3 +108,4 @@ Therefore, by choosing Helidon, we would end up having the same problem: a too y
 * [Helidon medium](https://medium.com/helidon)
 * [Which Java Microservice Framework Should You Choose in 2020?](https://medium.com/better-programming/which-java-microservice-framework-should-you-choose-in-2020-4e306a478e58)
 * [Helidon YouTube channel](https://www.youtube.com/channel/UChg00-uTTrCMmPsuzUNaZsA)
+* [Benchmarks](https://www.techempower.com/benchmarks/#section=data-r19&hw=cl&test=json&l=xan9tr-1r&f=zijunz-zid05b-zik0zj-zik0zj-zik0zj-zijbpb-zdk8an-v2qiv3-xamxa7-zik0zj-73)
