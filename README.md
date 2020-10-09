@@ -21,6 +21,8 @@ docker run -d -p 8080:8080 --memory="1024m" --network ece2b6cf70d7 helidon
 
 The following image shows how the loading test was executed:
 
+![INFO](images/diagram.png "Diagram")
+
 
 The tests were like:
 
