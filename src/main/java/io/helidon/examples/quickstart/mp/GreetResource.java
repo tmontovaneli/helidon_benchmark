@@ -24,47 +24,19 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
 
-/**
- * A simple JAX-RS resource to greet you. Examples:
- *
- * Get default greeting message:
- * curl -X GET http://localhost:8080/greet
- *
- * Get greeting message for Joe:
- * curl -X GET http://localhost:8080/greet/Joe
- *
- * Change greeting
- * curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Howdy"}' http://localhost:8080/greet/greeting
- *
- * The message is returned as a JSON object.
- */
 @Path("/greet")
 @RequestScoped
 public class GreetResource {
 
     private static final JsonBuilderFactory JSON = Json.createBuilderFactory(Collections.emptyMap());
 
-    /**
-     * The greeting message provider.
-     */
     private final GreetingProvider greetingProvider;
 
-    /**
-     * Using constructor injection to get a configuration property.
-     * By default this gets the value from META-INF/microprofile-config
-     *
-     * @param greetingConfig the configured greeting message
-     */
     @Inject
     public GreetResource(GreetingProvider greetingConfig) {
         this.greetingProvider = greetingConfig;
     }
 
-    /**
-     * Return a worldly greeting message.
-     *
-     * @return {@link JsonObject}
-     */
     @SuppressWarnings("checkstyle:designforextension")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -72,12 +44,6 @@ public class GreetResource {
         return createResponse("World");
     }
 
-    /**
-     * Return a greeting message using the name that was provided.
-     *
-     * @param name the name to greet
-     * @return {@link JsonObject}
-     */
     @SuppressWarnings("checkstyle:designforextension")
     @Path("/{name}")
     @GET
@@ -86,12 +52,6 @@ public class GreetResource {
         return createResponse(name);
     }
 
-    /**
-     * Set the greeting to use in future messages.
-     *
-     * @param jsonObject JSON containing the new greeting
-     * @return {@link Response}
-     */
     @SuppressWarnings("checkstyle:designforextension")
     @Path("/greeting")
     @PUT

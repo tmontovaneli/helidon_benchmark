@@ -1,3 +1,8 @@
 **/node_modules
 package-lock.json
 **/influxdb/influx_data/wal/_internal/monitor/1/
+**/target
+**/.idea
+helidon-quickstart-mp.iml
+**/ObjectStore
+**/util/commands.txt
